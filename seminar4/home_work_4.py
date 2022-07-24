@@ -10,7 +10,6 @@ while d % 1 != 0:
     count += 1
 print(round(math.pi, count))
 
-
 # 2. Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
 
 def f(x):
@@ -58,17 +57,17 @@ line = ''
 for i in range(0, k+1):
     if i == 0:
         if ko[i] > 0:
-            line = line+'+'+str(spKoff[i])+'=0'
+            line = line+'+'+str(ko[i])+'=0'
         else:
             line = line+'=0'
     elif i == 1:
         if ko[i] > 1:
-            line = str(spKoff[i])+'*x'+line
+            line = str(ko[i])+'*x'+line
         elif ko[i] == 1:
             line = 'x'+line
     else:
         if ko[i] > 1:
-            line = str(spKoff[i])+'*x^'+str(i)+'+'+line
+            line = str(ko[i])+'*x^'+str(i)+'+'+line
         if ko[i] == 1:
             line = 'x^'+str(i)+'+'+line
 ko.reverse()
