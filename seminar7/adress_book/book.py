@@ -1,0 +1,1 @@
+database = "./Users/pest/Documents/Учеба (Разработчик)/python/seminar7/adress_book/book/fio.csv"
