@@ -1,2 +1,4 @@
-import controller as f
-f.get_num()
+from controller import get_num
+
+
+get_num()

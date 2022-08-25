@@ -1,3 +1,3 @@
-import program
+import Program
 
-program.run()
+Program.run()

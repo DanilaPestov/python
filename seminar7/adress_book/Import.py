@@ -1,7 +1,7 @@
 import os
 import pandas as pd
-from book import database
-import export as ab_export
+from options import database
+import Export as ab_export
 
 #добавляет в текущий файл новые данные
 #ab_import.import_file("fio_import.csv")
@@ -34,7 +34,7 @@ def import_file(filename):
 def importf():
     filename = ""
     while len(filename) == 0:
-        filename = input("Введите имя CSV Файла для импорта(./book/fio_import.csv):")
+        filename = input("Введите имя CSV Файла для импорта(./Files/fio_import.csv):")
         if not os.path.exists(filename):
             print(f"Файл {filename} не существует!")
             filename = ""
